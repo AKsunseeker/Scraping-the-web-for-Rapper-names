@@ -1,0 +1,13 @@
+<h1>Rappers</h1>
+<hr />
+
+<ul>
+  <% @rapperz.each do |rapper| %>
+    <li>What up gangsta, my name is: <%= rapper.name %></li>
+  <% end %>
+</ul>
+<!-- Will Paginate Example -->
+<% #will_paginate @rappers %> 
+
+<!-- Kaminari Example -->
+<%= paginate @rapperz %>
